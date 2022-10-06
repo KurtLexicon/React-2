@@ -1,3 +1,10 @@
+html {
+  background-color: darkgray;
+}
+#root {
+  background-color: darkgray;
+}
+
 
 .container {
   border-style: solid;

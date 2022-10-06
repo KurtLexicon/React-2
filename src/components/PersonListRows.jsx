@@ -26,7 +26,7 @@ export function PersonListRows({ persons, rowClick }) {
   return (
     <>
       <h2>Click on row to edit</h2>
-      <Container fluid className="personList">
+      <Container fluid className="personListRow">
         <PersonListHeader />
         <ListGroup>
           {persons.map((p) => (
