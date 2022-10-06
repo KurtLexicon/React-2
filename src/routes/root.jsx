@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { AppContext } from "../contexts/Contexts";
-import { Button, Nav, Navbar, NavLink as NV, NavItem } from "react-bootstrap";
+import { Button, Navbar } from "react-bootstrap";
 import { Outlet, NavLink, useNavigation } from "react-router-dom";
 import "./root.css";
 

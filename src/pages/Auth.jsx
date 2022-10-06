@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { AppContext } from "../contexts/Contexts";
@@ -49,7 +47,7 @@ export function Auth() {
           {!appContext.isLoggedIn && (
             <Container>
               <Form onSubmit={() => loginHandler(appContext)}>
-              <h1>Log in to the app</h1>
+                <h1>Log in to the app</h1>
                 <Form.Group className="mb-3" controlId="userName">
                   <Form.Label>Enter your name:</Form.Label>
                   <Form.Control
@@ -74,17 +72,17 @@ export function Auth() {
           )}
           {appContext.isLoggedIn && (
             <Container>
-            <Form onSubmit={() => logoutHandler(appContext)}>
-            <h1>Log out from the app</h1>
-              <Form.Text>
-                You are currently logged in as {appContext.userName}
-              </Form.Text>
-              <div className="buttonBox">
-                <Button variant="primary" type="submit">
-                  Log Out
-                </Button>
-              </div>
-            </Form>
+              <Form onSubmit={() => logoutHandler(appContext)}>
+                <h1>Log out from the app</h1>
+                <Form.Text>
+                  You are currently logged in as {appContext.userName}
+                </Form.Text>
+                <div className="buttonBox">
+                  <Button variant="primary" type="submit">
+                    Log Out
+                  </Button>
+                </div>
+              </Form>
             </Container>
           )}
         </>
