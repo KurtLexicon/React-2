@@ -1,0 +1,19 @@
+.personList {
+  text-align: left;
+  font-size: 12px;
+}
+
+.headerRow {
+  font-size: 110%;
+  font-weight: bold;
+  background-color: yellow;
+}
+
+.clickableRow {
+  cursor: pointer;
+}
+
+.clickableRow:hover {
+  color: orange;
+  font-weight: bold;
+}
