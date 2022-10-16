@@ -3,7 +3,6 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { AppContext } from "../contexts/Contexts";
-import "./Auth.css";
 
 export function Auth() {
   const [newName, setNewName] = useState("");
@@ -48,7 +47,7 @@ export function Auth() {
             <Container>
               <Form onSubmit={() => loginHandler(appContext)}>
                 <h1>Log in to the app</h1>
-                <Form.Group className="mb-3" controlId="userName">
+                <Form.Group className="mb-3">
                   <Form.Label>Enter your name:</Form.Label>
                   <Form.Control
                     type="text"

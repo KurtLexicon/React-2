@@ -1,4 +1,4 @@
-.inputTextGroup {
+.inputGroup {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -6,7 +6,7 @@
   padding-bottom: 0.5em;
 }
 
-.inputTextGroup label {
+.inputGroup label {
   font-size: 85%;
 }
 
@@ -17,13 +17,6 @@
 .inputInvalid {
   background-color: lightcoral;
 }
-
-.inputTextGroup .err {
-  color: red;
-  height: 1em;
-}
-
-/* ============================================ */
 
 .tooltipBase {
   position: relative;

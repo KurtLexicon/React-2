@@ -6,19 +6,16 @@ import Root, {
   loader as rootLoader,
   action as rootAction,
 } from "./routes/root";
-import Welcome from "./pages/welcome";
-// import "./index.css";
-import { PersonList, loader as personListLoader } from "./pages/PersonList";
-import { action as seedAction, Seed } from "./pages/SeedList";
-import { action as removePersonAction } from "./actions/RemovePerson";
+
+import Welcome from "./pages/Welcome";
+import { Cities } from "./pages/Cities";
+import { Persons} from "./pages/Persons";
+import { Countries} from "./pages/Countries";
+import { Languages} from "./pages/Languages";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+// import "./index.css";
 
-import {
-  PersonForm,
-  loader as personFormLoader,
-  action as personFormAction,
-} from "./pages/PersonForm";
 import { Auth } from "./pages/Auth";
 
 const router = createBrowserRouter([
@@ -38,37 +35,28 @@ const router = createBrowserRouter([
             errorElement: <div>Oops! There was an error.</div>,
           },
           {
-            path: "personList",
-            element: <PersonList />,
-            loader: personListLoader,
+            path: "persons",
+            element: <Persons />,
             errorElement: <div>Oops! There was an error.</div>,
-          },
+          },       
           {
-            path: `person/:id`,
-            element: <PersonForm id={0} />,
-            loader: personFormLoader,
-            action: personFormAction,
+            path: "cities",
+            element: <Cities />,
             errorElement: <div>Oops! There was an error.</div>,
-          },
+          },       
           {
-            path: "person/:id/remove",
-            action: removePersonAction,
+            path: "countries",
+            element: <Countries />,
             errorElement: <div>Oops! There was an error.</div>,
-          },
+          },       
+          {
+            path: "languages",
+            element: <Languages />,
+            errorElement: <div>Oops! There was an error.</div>,
+          },       
           {
             path: "auth",
             element: <Auth />,
-            errorElement: <div>Oops! There was an error.</div>,
-          },
-          {
-            path: "seedPersonList",
-            element: <Seed />,
-            action: seedAction,
-            errorElement: <div>Oops! There was an error.</div>,
-          },
-          {
-            path: "seedPersonList/doSeed",
-            action: seedAction,
             errorElement: <div>Oops! There was an error.</div>,
           },
           {
