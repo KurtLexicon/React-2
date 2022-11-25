@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import ListGroup from "react-bootstrap/ListGroup";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import "../styles/listRows.css";
+import "../styles/ListRows.css";
 
 export function GenericListRows(props) {
   const { items, onRowClick, onHeaderClick, cols } = props;

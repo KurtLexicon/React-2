@@ -7,7 +7,7 @@ import Root, {
   action as rootAction,
 } from "./routes/root";
 
-import Welcome from "./pages/Welcome";
+import Welcome from "./pages/welcome";
 import { Cities } from "./pages/Cities";
 import { Persons} from "./pages/Persons";
 import { Countries} from "./pages/Countries";

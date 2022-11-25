@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { GenericListRows } from "./GenericListRows";
-import "../styles/listForm.css";
+import "../styles/ListForm.css";
 
 const asc = 1;
 const desc = -1;

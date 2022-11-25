@@ -4,7 +4,7 @@ import { GenericList } from "../components/GenericList";
 import { EditPopup } from "../components/EditPopup";
 import { getList, getItem } from "../api/languages";
 import { PopupErrmsg } from "../components/PopupErrmsg";
-import "../styles/listForm.css";
+import "../styles/ListForm.css";
 import { updateItem, addItem, deleteItem } from "../api/languages";
 import { LanguageFormContent } from "../components/LanguageFormContent";
 

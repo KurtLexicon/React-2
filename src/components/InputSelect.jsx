@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import "../styles/input.css";
+import "../styles/Input.css";
 
 export function InputSelect(props) {
   const { label, err, orgValue, id, value, onChange, selectList } = props;
