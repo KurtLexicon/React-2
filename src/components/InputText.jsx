@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import "./InputText.css";
+import "../styles/input.css";
 export function InputText(props) {
   function handleValueChanged(e) {
     props.onChange(e.target.value);
@@ -13,7 +13,7 @@ export function InputText(props) {
     ? "inputChanged"
     : "";
   return (
-    <div className="inputTextGroup">
+    <div className="inputGroup">
       <label>{props.label}</label>
       <div className="tooltipBase">
         {props.err && <div className="tooltipPopup">{props.err}</div>}

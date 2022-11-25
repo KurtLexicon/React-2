@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { AppContext } from "../contexts/Contexts";
 import { Button, Navbar } from "react-bootstrap";
 import { Outlet, NavLink, useNavigation } from "react-router-dom";
-import "./root.css";
+import "../styles/root.css";
 
 export async function action() {}
 
@@ -18,18 +18,21 @@ export default function Root() {
   return (
     <AppContext.Provider value={{ ...appContext, setAppContext }}>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="light">
-        <div className="maxwidthcontent">
+        <div>
           <Button variant="link">
             <NavLink to="welcome">Welcome</NavLink>
           </Button>
           <Button variant="link">
-            <NavLink to="personList">Person List</NavLink>
+            <NavLink to="persons">Persons</NavLink>
           </Button>
           <Button variant="link">
-            <NavLink to="person/0">Add Person</NavLink>
+            <NavLink to="cities">Cities</NavLink>
           </Button>
           <Button variant="link">
-            <NavLink to="seedPersonList">Seed List</NavLink>
+            <NavLink to="countries">Countries</NavLink>
+          </Button>
+          <Button variant="link">
+            <NavLink to="languages">Languages</NavLink>
           </Button>
           <Button variant="link">
             <NavLink to="auth">{authText}</NavLink>
